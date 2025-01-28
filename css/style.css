@@ -1,10 +1,9 @@
-p#pborder ,h1.utable , h1.test {color:blue;font-size :40px;font-weight:200}
-    
-table {color:rgb(255, 0, 200);font-size :20px;font-weight: 200;}
-ul{color:rgb(0, 204, 255);font-size :20px;font-weight: 200;}
-tr#test{color:rgb(42, 165, 42);font-size: 20px;font-weight: 100;}
-div.division ul.ulist li#ilist{color:gold;font-size: 20px;font-weight: 100;}
-p#pborder, h1.utable  { border: solid 12px  red;
+ p#pborder ,h1.utable , h1.test {color:blue;font-size :40px;font-weight:200}
+ol#second , table {color:rgb(255, 0, 200);font-size :20px;font-weight: 200;}
+ol#thirst , ul{color:rgb(0, 204, 255);font-size :20px;font-weight: 200;}
+ol#forst ,tr#test{color:rgb(42, 165, 42);font-size: 20px;font-weight: 100;}
+ol#first ,div.division ul.ulist li#ilist{color:gold;font-size: 20px;font-weight: 100;}
+p#pborder , h1.utable  { border: solid 12px  red;
        height : 10px;
        width  :  15px;
        padding : 30px 385px 50px 30px ;
