@@ -1,10 +1,71 @@
- p#pborder ,h1.utable , h1.test {color:blue;font-size :40px;font-weight:200}
-ol#second , table {color:rgb(255, 0, 200);font-size :20px;font-weight: 200;}
-ol#thirst , ul{color:rgb(0, 204, 255);font-size :20px;font-weight: 200;}
-ol#forst ,tr#test{color:rgb(42, 165, 42);font-size: 20px;font-weight: 100;}
-ol#first ,div.division ul.ulist li#ilist{color:gold;font-size: 20px;font-weight: 100;}
-p#pborder , h1.utable  { border: solid 12px  red;
+  h1.utable , h1.test {color:blue;font-size :40px;font-weight:200}
+li#second , table {color:rgb(255, 0, 200);font-size :20px;font-weight: 200;}
+li#thirst , ul{color:rgb(0, 204, 255);font-size :20px;font-weight: 200;}
+li#forst ,tr#test{color:rgb(42, 165, 42);font-size: 20px;font-weight: 100;}
+li#first ,div.division ul.ulist li#ilist{color:gold;font-size: 20px;font-weight: 100;}
+ul#pborder , h1.utable  { border: solid 12px  red;
        height : 10px;
        width  :  15px;
        padding : 30px 385px 50px 30px ;
        margin : 10px 20px  10px 5px; }
+      
+       .table { background-color: aquamarine;
+              border:2px solid chartreuse;
+              width : 500px;
+              margin:1px;
+              padding : 2px;
+              color :blueviolet
+                           
+               
+              }
+
+                       #animation{ background-color: blueviolet;
+                       color: rgb(174, 185, 22);
+                       border:rgb(255, 0, 200) 2px solid;
+                       margin : 1px;
+                       padding :2px;
+                       width :200px;
+                       height: 50;
+                     }
+                     #animation p:last-of-type{ color:black
+                     }   
+
+
+      .city:hover , #animation:hover{ background-color: coral;
+       color: blue;
+       width: 300px;
+       text-align: center;
+       
+       }              
+                   
+             #botom{ background-color: blue;
+                   
+                    border-radius: 10px;
+                    margin : 2px;
+
+       
+       
+        }   
+        .table:hover ,#botom:hover{ background-color: brown;
+        
+       }       
+                            
+      .city{ background-color:blanchedalmond;
+       color:blue;
+       border: 2px solid blueviolet;
+       margin:1px;
+       width: 200px;
+       padding : 2px;
+}
+
+#upspace {margin :150px 1px 1px 1px ;
+
+
+}
+.bar{ background-color: blanchedalmond;
+       margin:0px;
+       text-align: center;
+       height: 30px;
+
+}
+                       
