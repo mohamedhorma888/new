@@ -1,0 +1,8 @@
+1.first url gets resolved and the request (the url adress +ipadress) will be taken to the internet provider and than the internet provider forwards the request to an other big server
+  after that response is parsed and than the response will be returned and than page will be  displayed
+
+
+2.In order to become a web developer, I need good knowledge of HTML, CSS and Javascript, for example
+
+3.I chose to learn web development because it allows me to learn different technologies and
+learn new things
