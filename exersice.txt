@@ -1,0 +1,114 @@
+
+ 1.
+C:\Users\Tfeil (main)
+λ mkdir larn_git
+
+2.
+C:\Users\Tfeil (main)
+λ cd larn_git
+
+C:\Users\Tfeil\larn_git (main)
+
+3.
+C:\Users\Tfeil\larn_git (main)
+λ echo .>  third.txt
+
+4.
+C:\Users\Tfeil\larn_git (main)
+λ git init
+Initialized empty Git repository in C:/Users/Tfeil/larn_git/.git/
+
+5.
+C:\Users\Tfeil\larn_git (master)
+λ git add third.txt
+
+6.
+C:\Users\Tfeil\larn_git (master)
+λ git commit -m "adding third.txt"
+[master (root-commit) 79138ad] adding third.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 third.txt
+
+7.
+C:\Users\Tfeil\larn_git (master)
+λ git log
+commit 79138adbdbc2b294d1b963df0f4423d73c9a6e6d (HEAD -> master)
+Author: mohamedhorma888 <tfeila888@gmail.com>
+Date:   Sat May 10 23:33:22 2025 +0000
+
+    adding third.txt
+ 
+8.
+ C:\Users\Tfeil\larn_git (master)
+λ echo .>  fourth.txt
+
+C:\Users\Tfeil\larn_git (master)
+
+9.
+C:\Users\Tfeil\larn_git (master)
+λ git add fourth.txt
+
+C:\Users\Tfeil\larn_git (master) 
+
+10.
+C:\Users\Tfeil\larn_git (master)
+λ git commit -m  "adding fourth.txt"
+[master 48f1277] adding fourth.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fourth.txt
+
+C:\Users\Tfeil\larn_git (master)
+
+11
+C:\Users\Tfeil\test\larn_git (master)
+λ rm third.txt
+12
+ 
+
+13.
+C:\Users\Tfeil\test\larn_git (master)
+λ git commit -m "removing third.txt"
+[master 4c31369] removing third.txt
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 third.txt
+14.
+C:\Users\Tfeil\test\larn_git (master)
+λ git log
+commit 4c31369908d8aed6b41f436ce6ff14d79a6db092 (HEAD -> master)
+Author: mohamedhorma888 <tfeila888@gmail.com>
+Date:   Sat May 10 21:32:09 2025 +0000
+
+    removing third.txt
+
+commit 335a53156c4ca9dc26344867f7c97d34ee5f7b83
+Author: mohamedhorma888 <tfeila888@gmail.com>
+Date:   Sat May 10 21:27:57 2025 +0000
+
+    adding fourth.txt
+
+commit 8d673e6c5d4607a4370720a4f57f26af3ef8b884
+Author: mohamedhorma888 <tfeila888@gmail.com>
+Date:   Sat May 10 21:21:17 2025 +0000
+
+    adding third.txt
+
+15.
+C:\Users\Tfeil\test\larn_git (master)
+λ git config --global core.pager "cat"
+16.
+
+C:\Users\Tfeil\test\larn_git (master)
+λ git config --list --global
+user.email=tfeila888@gmail.com
+user.name=mohamedhorma888
+core.pager=cat
+17.
+C:\Users\Tfeil\test\larn_git (master)
+λ git config --global --list
+user.email=tfeila888@gmail.com
+user.name=mohamedhorma888
+core.pager=cat
+
+
+
+
