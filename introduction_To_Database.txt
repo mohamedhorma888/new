@@ -1,0 +1,30 @@
+
+1.
+
+Relational Model: SQL databases are based on the relational model,
+ organizing data into tables with predefined rows and columns.
+and Used for retrieving, inserting, updating, and deleting data, as well as creating and managing database structures (tables, views, stored procedures).
+
+ 
+Non-Relational Models: NoSQL databases encompass various non-relational models, such as document-oriented (e.g., MongoDB)
+and used for  Stores data as a collection of key-value pairs, where each key is unique and maps to a specific value. 
+
+2.
+
+2.1 
+SQL: Employs a rigid, schema-based relational model, storing data in tables with predefined columns and rows
+MongoDB: Uses a flexible, schema-less document model, storing data in JSON-like BSON documents within collections
+2.2
+SQL: Primarily scales vertically by adding more resources (CPU, RAM) to a single server
+MongoDB: Designed for horizontal scalability through sharding
+2.3
+SQL: Utilizes the Standard Query Language (SQL) for defining, manipulating, and retrieving data.
+MongoDB: Uses a rich, JavaScript-based query language (MongoDB Query Language - MQL) for querying and data manipulation.
+2.4
+SQL: Excels at handling complex relationships between tables using various types of joins (INNER JOIN, LEFT JOIN, etc.),
+ ensuring data integrity through foreign keys.
+MongoDB: Lacks native support for complex joins across collections like SQL databases
+2.5
+SQL: Typically performs well for complex queries involving multiple joins and aggregations on structured data
+MongoDB: Often performs well with high-volume write operations and handling unstructured 
+or semi-structured data due to its flexible schema and document-oriented nature.
