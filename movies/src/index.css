@@ -1,0 +1,31 @@
+.MovieCard {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 250px;
+    text-align: center;
+    margin:10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.MovieCard .MovieCard-image {
+    max-width: 60%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+.MovieCard Card-title {
+    font-size: 1.5em;
+    margin: 8px 0;
+}
+.MovieCard .Card-text {
+    font-size: 1em;
+    color: #555;
+    margin: 8px 0;
+}
+MovieCard .Card-rating {
+    font-size: 1.2em;
+    color: #f39c12;
+    font-weight: bold;
+}
