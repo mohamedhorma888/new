@@ -2,10 +2,13 @@ import React from 'react';
 import film1 from './assets/film1.jpg'
 import film2 from './assets/film2.jpg'
 import film3 from './assets/film3.jpg'
+import { Link } from 'react-router-dom';
+
 
 const MovieCard = (props) => {
   return (
     <>
+    <h1>Hello</h1> 
     <div className = 'MovieCard'>
     <img className ='MovieCard-image' src={film1} alt="Profile Picture1" />
     <h2 className = 'Card-title'>{props.title[0]}</h2>
