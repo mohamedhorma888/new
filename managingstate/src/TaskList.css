@@ -1,0 +1,94 @@
+/* Styles for TaskList component */
+:root{
+  --bg:#f2f6fb;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --accent:#2563eb;
+  --danger:#dc2626;
+  --success:#16a34a;
+  --radius:8px;
+}
+
+.task-list {
+  max-width:720px;
+  margin:24px auto;
+  background:var(--bg);
+  padding:20px;
+  border-radius:var(--radius);
+  box-shadow:0 6px 18px rgba(32,33,36,0.06);
+  font-family:system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.task-list h2{
+  margin:0 0 12px 0;
+  color:#111827;
+}
+
+.task-form{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+  margin-bottom:16px;
+}
+
+.form-row{flex:1; min-width:220px}
+
+.input, textarea{
+  width:100%;
+  padding:8px 10px;
+  border:1px solid #e5e7eb;
+  border-radius:6px;
+  font-size:14px;
+  background:var(--card);
+  box-sizing:border-box;
+}
+
+textarea{resize:vertical}
+
+.error{color:var(--danger); font-size:13px; margin-top:6px}
+
+.btn{
+  padding:8px 12px;
+  border-radius:6px;
+  border:0;
+  cursor:pointer;
+  font-weight:600;
+}
+
+.btn-primary{background:var(--accent); color:white}
+.btn-secondary{background:#e5e7eb; color:#111827}
+.btn-danger{background:var(--danger); color:white}
+
+.tasks-list{list-style:none; padding:0; margin:0}
+
+.task-item{
+  background:var(--card);
+  padding:12px;
+  margin-bottom:10px;
+  border-radius:6px;
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  justify-content:space-between;
+  border:1px solid rgba(16,24,40,0.04);
+}
+
+.task-left{display:flex; gap:12px; align-items:flex-start; flex:1}
+.task-text{display:block}
+.task-title{font-weight:700; color:#111827}
+.task-desc{font-size:14px; color:var(--muted); margin-top:4px}
+
+.task-actions{display:flex; gap:8px; align-items:center}
+
+.task-item.completed{background:#f8fafc}
+.task-item.completed .task-title{ text-decoration:line-through; color:#374151}
+.task-item.completed .task-desc{ text-decoration:line-through; opacity:0.75}
+
+.edit-form{display:flex; gap:8px; align-items:flex-start; width:100%}
+.edit-form .input, .edit-form textarea{font-size:14px}
+
+@media (max-width:520px){
+  .task-form{flex-direction:column}
+  .edit-form{flex-direction:column}
+}
