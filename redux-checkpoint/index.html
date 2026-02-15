@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tasks Demo</title>
+    <style>
+      body { font-family: Arial, Helvetica, sans-serif; padding: 20px; }
+      .task { display:flex; align-items:center; gap:8px; padding:6px 0; }
+      .task input[type="text"]{flex:1}
+      .done { text-decoration: line-through; color: #777 }
+      .controls { margin:12px 0 }
+      button { margin-left:4px }
+    </style>
+  </head>
+  <body>
+    <h1>Tasks</h1>
+    <div id="root"></div>
+
+    <!-- React and Redux from CDN for quick demo -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/redux@4/dist/redux.js"></script>
+    <script src="https://unpkg.com/react-redux@8/dist/react-redux.js"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
