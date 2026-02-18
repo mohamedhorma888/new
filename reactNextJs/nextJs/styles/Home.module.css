@@ -1,0 +1,7 @@
+.hero{background:white;padding:2rem;border-radius:8px;margin-bottom:1rem}
+.hero h2{margin-top:0}
+.profile{float:left;margin-right:1rem}
+.skills{background:white;padding:1rem;border-radius:8px;margin-bottom:1rem}
+.projectsPreview{background:white;padding:1rem;border-radius:8px}
+.grid{display:flex;gap:1rem}
+.card{flex:1;border:1px solid #eee;padding:0.5rem;border-radius:6px;background:#fff}
