@@ -1,0 +1,14 @@
+@startuml
+title Book State Diagram
+[*] --> Available
+Available --> Reserved : reserve()
+Available --> Issued : checkout()
+Reserved --> Issued : checkout(by reserver)
+Issued --> Overdue : passDueDate
+Issued --> Returned : return()
+Overdue --> Returned : return()
+Returned --> Available : processReturn
+[*] --> Lost
+[*] --> Maintenance
+Maintenance --> Available : repair()
+@enduml

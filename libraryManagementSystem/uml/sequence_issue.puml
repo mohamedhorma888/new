@@ -1,0 +1,23 @@
+@startuml
+title Issue Book Sequence
+actor Member
+participant "Librarian UI" as UI
+participant API
+participant BorrowingService
+participant BookRepo
+participant MemberRepo
+participant BorrowRepo
+participant Notification
+
+Member -> UI: request checkout
+UI -> API: POST /issue {bookId, memberId}
+API -> BorrowingService: issue(bookId, memberId)
+BorrowingService -> MemberRepo: get(memberId)
+BorrowingService -> BookRepo: get(bookId)
+BorrowingService -> BookRepo: update(book)
+BorrowingService -> BorrowRepo: save(borrowRecord)
+BorrowingService -> Notification: sendCheckoutConfirmation()
+BorrowingService -> API: result
+API -> UI: 200 OK
+
+@enduml

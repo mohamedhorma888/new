@@ -1,0 +1,49 @@
+@startuml
+title Library Management - Class Diagram
+
+class Book {
+  - id: string
+  - isbn: string
+  - title: string
+  - authors: string[]
+  - copiesTotal: number
+  - copiesAvailable: number
+  - status: BookStatus
+  + isAvailable(): boolean
+  + checkout(): void
+  + returnCopy(): void
+}
+
+class Member {
+  - id: string
+  - name: string
+  - email: string
+  - maxAllowed: number
+  - borrowedCount: number
+  - finesDue: number
+  + canBorrow(): boolean
+}
+
+class BorrowRecord {
+  - id: string
+  - bookId: string
+  - memberId: string
+  - issueDate: Date
+  - dueDate: Date
+  - returnDate: Date
+  - fineApplied: number
+  + isOverdue(): boolean
+  + calculateFine(): number
+}
+
+Book "1" -- "*" BorrowRecord
+Member "1" -- "*" BorrowRecord
+
+class BorrowingService
+class NotificationService
+BorrowingService --> Book
+BorrowingService --> Member
+BorrowingService --> BorrowRecord
+BorrowingService --> NotificationService
+
+@enduml
