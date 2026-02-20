@@ -1,0 +1,20 @@
+{
+  "name": "shopping-cart-design-patterns",
+  "version": "1.0.0",
+  "description": "Introduction to Design Patterns and Procedural Programming - Shopping Cart System",
+  "main": "src/procedural-shopping-cart.js",
+  "scripts": {
+    "demo:procedural": "node src/procedural-shopping-cart.js",
+    "demo:module": "node src/module-pattern-shopping-cart.js",
+    "demo:all": "echo '=== Running Procedural Demo ===' && node src/procedural-shopping-cart.js && echo '\n=== Running Module Pattern Demo ===' && node src/module-pattern-shopping-cart.js"
+  },
+  "keywords": [
+    "design-patterns",
+    "javascript",
+    "module-pattern",
+    "procedural-programming",
+    "shopping-cart"
+  ],
+  "author": "Student",
+  "license": "MIT"
+}
