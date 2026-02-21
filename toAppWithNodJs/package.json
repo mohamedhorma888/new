@@ -1,0 +1,13 @@
+{
+  "name": "todo-list-backend",
+  "version": "1.0.0",
+  "description": "A simple To-Do List backend using Node.js core modules",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["todo", "rest-api", "crud"],
+  "author": "",
+  "license": "ISC"
+}
