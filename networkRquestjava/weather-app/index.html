@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple weather app that displays temperature and weather conditions">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weather App</h1>
+        
+        <div class="search-container">
+            <input 
+                type="text" 
+                id="cityInput" 
+                placeholder="Enter city name..." 
+                class="city-input"
+            >
+            <button id="searchBtn" class="search-btn">Search</button>
+        </div>
+
+        <div id="errorMessage" class="error-message"></div>
+
+        <div id="weatherContainer" class="weather-container hidden">
+            <div class="weather-card">
+                <div class="location-info">
+                    <h2 id="cityName" class="city-name"></h2>
+                    <p id="countryCode" class="country-code"></p>
+                </div>
+
+                <div class="weather-main">
+                    <div class="temperature-section">
+                        <span id="temperature" class="temperature"></span>
+                        <span class="unit">°C</span>
+                    </div>
+                    <div class="weather-description">
+                        <img id="weatherIcon" src="" alt="Weather icon" class="weather-icon">
+                        <p id="description" class="description"></p>
+                    </div>
+                </div>
+
+                <div class="weather-details">
+                    <div class="detail-item">
+                        <span class="detail-label">Feels Like</span>
+                        <span id="feelsLike" class="detail-value"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Humidity</span>
+                        <span id="humidity" class="detail-value"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Pressure</span>
+                        <span id="pressure" class="detail-value"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Wind Speed</span>
+                        <span id="windSpeed" class="detail-value"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">Visibility</span>
+                        <span id="visibility" class="detail-value"></span>
+                    </div>
+                    <div class="detail-item">
+                        <span class="detail-label">UV Index</span>
+                        <span id="uvIndex" class="detail-value"></span>
+                    </div>
+                </div>
+
+                <div class="sunrise-sunset">
+                    <div class="sun-item">
+                        <span class="sun-label">Sunrise</span>
+                        <span id="sunrise" class="sun-time"></span>
+                    </div>
+                    <div class="sun-item">
+                        <span class="sun-label">Sunset</span>
+                        <span id="sunset" class="sun-time"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loadingSpinner" class="loading-spinner hidden">
+            <div class="spinner"></div>
+            <p>Loading weather data...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
