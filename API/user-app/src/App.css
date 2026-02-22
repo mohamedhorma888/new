@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.user-list-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.user-list-container h1 {
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.users-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+.user-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid #667eea;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.user-card h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  word-break: break-word;
+}
+
+.user-card p {
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  word-break: break-word;
+}
+
+.user-card strong {
+  color: #667eea;
+}
+
+.loading {
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 1.5rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.error {
+  text-align: center;
+  padding: 50px 20px;
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+}
+
+@media (max-width: 768px) {
+  .users-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .user-list-container h1 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+}
