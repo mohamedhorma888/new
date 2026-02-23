@@ -1,0 +1,18 @@
+{
+  "name": "node-exercises",
+  "version": "1.0.0",
+  "description": "Node.js guided exercises",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "hello": "node hello-world.js",
+    "write-welcome": "node write-welcome.js",
+    "read-hello": "node read-hello.js",
+    "gen-pass": "node password-generator.js",
+    "send-email": "node email-sender.js"
+  },
+  "dependencies": {
+    "generate-password": "^1.7.0",
+    "nodemailer": "^6.9.4"
+  }
+}
