@@ -1,0 +1,39 @@
+{
+  "name": "secure-task-manager",
+  "version": "1.0.0",
+  "description": "Secure Task Manager REST API with JWT and Google OAuth",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "task-manager",
+    "rest-api",
+    "jwt",
+    "oauth",
+    "security"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^7.0.0",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "dotenv": "^16.0.3",
+    "helmet": "^7.0.0",
+    "express-rate-limit": "^6.7.0",
+    "express-mongo-sanitize": "^2.2.0",
+    "xss-clean": "^0.1.1",
+    "passport": "^0.6.0",
+    "passport-google-oauth20": "^2.0.0",
+    "cookie-parser": "^1.4.6",
+    "validation": "^0.0.1",
+    "express-validator": "^7.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
