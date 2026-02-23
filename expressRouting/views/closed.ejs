@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currently Closed</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <main class="container closed-page">
+    <section class="closed-content">
+      <div class="closed-icon">🔒</div>
+      <h1>We're Currently Closed</h1>
+      <p>Sorry! This application is only available during business hours.</p>
+      
+      <div class="closed-info">
+        <p><strong>Current Time:</strong> <%= currentTime %></p>
+        <p><strong>Current Day:</strong> <%= currentDay %></p>
+      </div>
+
+      <div class="business-hours">
+        <h2>Our Business Hours</h2>
+        <ul>
+          <li>Monday - Friday: 9:00 AM - 5:00 PM</li>
+          <li>Saturday & Sunday: Closed</li>
+          <li>Holidays: Closed</li>
+        </ul>
+      </div>
+
+      <p class="closed-message">Please visit us again during our business hours. Thank you!</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Express Routing Application. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> - Express Routing App</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">Express Routing</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/services" class="nav-link">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact" class="nav-link active">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="content">
+      <h1>Contact Us</h1>
+      <p>Get in touch with our team. We're here to help during business hours.</p>
+
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+          
+          <div class="info-item">
+            <h3>📍 Address</h3>
+            <p>123 Tech Street<br>
+            Silicon Valley, CA 94025<br>
+            United States</p>
+          </div>
+
+          <div class="info-item">
+            <h3>📞 Phone</h3>
+            <p><a href="tel:+14155551234">+1 (415) 555-1234</a></p>
+          </div>
+
+          <div class="info-item">
+            <h3>📧 Email</h3>
+            <p><a href="mailto:info@expressrouting.com">info@expressrouting.com</a></p>
+          </div>
+
+          <div class="info-item">
+            <h3>🕒 Business Hours</h3>
+            <p>Monday - Friday<br>
+            9:00 AM - 5:00 PM PST<br>
+            <em>Weekend & Holidays: Closed</em></p>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <h2>Send us a Message</h2>
+          <form>
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+          <p class="form-note">We'll get back to you as soon as possible during business hours.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Express Routing Application. All rights reserved.</p>
+  </footer>
+</body>
+</html>

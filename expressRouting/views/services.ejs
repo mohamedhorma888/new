@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%= title %> - Express Routing App</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-brand">Express Routing</a>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="/" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="/services" class="nav-link active">Our Services</a>
+        </li>
+        <li class="nav-item">
+          <a href="/contact" class="nav-link">Contact Us</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="content">
+      <h1>Our Services</h1>
+      <p>Discover the range of services we offer to meet your needs.</p>
+
+      <div class="services-grid">
+        <article class="service-card">
+          <h2>Web Development</h2>
+          <p>We build responsive and modern web applications using the latest technologies 
+          including Express.js, Node.js, and front-end frameworks.</p>
+          <ul>
+            <li>Full-stack development</li>
+            <li>API creation</li>
+            <li>Database design</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <h2>Server-Side Rendering</h2>
+          <p>Our expertise in template engines like EJS allows us to render dynamic 
+          content server-side for better SEO and initial page load performance.</p>
+          <ul>
+            <li>EJS templates</li>
+            <li>Pug templates</li>
+            <li>Custom middleware</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <h2>Routing & Middleware</h2>
+          <p>We design robust routing systems and custom middleware to handle business logic, 
+          authentication, logging, and validation efficiently.</p>
+          <ul>
+            <li>Route management</li>
+            <li>Middleware creation</li>
+            <li>Request handling</li>
+          </ul>
+        </article>
+
+        <article class="service-card">
+          <h2>Deployment & Maintenance</h2>
+          <p>Our team ensures your applications are properly deployed and maintained for 
+          optimal performance and reliability.</p>
+          <ul>
+            <li>Cloud deployment</li>
+            <li>Monitoring</li>
+            <li>Performance optimization</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Express Routing Application. All rights reserved.</p>
+  </footer>
+</body>
+</html>
