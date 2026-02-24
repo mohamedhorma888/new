@@ -1,0 +1,20 @@
+{
+  "name": "sqlnosql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "express": "^5.2.1",
+    "mongoose": "^9.2.2",
+    "mysql2": "^3.18.0",
+    "nodemon": "^3.1.14"
+  }
+}
